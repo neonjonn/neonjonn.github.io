@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+/* COLOURS
+#0058ff DARK BLUE
+#ff1a64 LIGHT BLUE
+#282828 DARK GREY
+*/
+
+/* SKY BLUE #64D1FF */
+
+/* NEW COLOURS
+
+#ff6d00 ORANGE
+#ff0084 PINK
+#99b2dd CORNFLOWER BLUE
+#9dfff9 CYAN
+#64f58d GREEN
+
+*/
+
+
+/*
+html { 
+    background: url(./images/blue-background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+*/
+
+html {
+    max-width: 100%;
+}
+
+body {
+    background-color: #282828;
+    margin: 0px;
+    font-family: 'Bungee', cursive;
+    color: #ffffff;
+}
+
+header {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+header div {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+header div.side {
+    width: 200px;
+}
+
+header div.center {
+    width: 100%;
+    /* vertical-align: top; */
+    margin-top: 25px;
+}
+
+header img {
+    height: 200px;
+    border-radius: 25px;
+}
+
+header div.center p.title {
+    color: #ff0084;
+    text-align: center;
+    font-size: 200px;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+header div.center p.sub-title {
+    color: #99b2dd;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+nav ul {
+    text-align: center;
+    margin: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+nav ul li a:last-child {
+    margin-right: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+nav ul {
+    position: relative;
+    display: block;
+}
+
+nav ul li {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+nav ul li:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 98%;
+    border: 5px solid black;
+    border-radius: 10px;
+    transform: scaleX(0);
+    background-color: #ffffff;
+    transition: transform 0.3s;
+}
+
+nav ul li:hover:after {
+    transform: scaleX(1);
+}
+
+a.discord-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff1a64;
+    margin: 0;
+    width: max-content;
+    text-decoration: none;
+    padding: 15px;
+    margin: 7px 20px;
+    background-color: #282828;
+    border: 2px solid #ff1a64;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+a.discord-button img {
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+a.discord-button:hover {
+    padding: 20px;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+a.discord-button:hover > img {
+    height: 25px;
+}
+
+.main-flex-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container {
+    width: auto;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.divider {
+    align-self: center;
+    width: 75%;
+    background-color: #aaaaaa;
+    height: 1px;
+}
+
+.flex-container div {
+    margin: 20px;
+    width: 50%;
+}
+
+
+.flex-container .side-container {
+    width: 30%
+}
+
+.flex-container h1 {
+    color: #ff1a64;
+    width: max-content;
+    margin-top: 0px;
+    font-size: 50px;
+    padding: 5px;
+}
+
+.flex-container p {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+div.counter-container {
+    width: 100%;
+    margin: 0;
+    padding: 0 20px 20px 0;
+}
+
+div.counter-container > div {
+    float: left;
+    margin: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#discord-counter {
+    margin-left: 10px;
+    width: auto;
+}
+
+.counter-text {
+    width: auto;
+}
+
+div.counter-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.counter-icon {
+    background-color: #00bb00;
+    border-radius: 10px;;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0px 0px 20px #00bb00;
+}
+
+.side-container img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+}
+
+.side-container iframe.youtube {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+a.button {
+    text-decoration: none;
+    color: #ff1a64;
+    position: absolute;
+    margin: 0;
+    width: max-content;
+    padding: 15px;
+    margin: 7px 20px;
+    background-color: #282828;
+    border: 2px solid #ff1a64;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+a.button img {
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+a.button:hover {
+    padding: 20px;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+a.button:hover > img {
+    height: 25px;
+}
+
+font.markdown {
+    color: #282828;
+    border-radius: 5px;
+    background-color: #ff1a64;
+    padding: 1px 5px;
+    font-family: monospace;
+    font-size: 20px;
+    display:inline-block;
+}
+
+font.math {
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+font.code {
+    font-family: monospace;
+    font-size: 18px;
+}
+
+p.convo {
+    line-height: 30px;
+}
+
+ol.rules-list {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #ff1a64;
+    line-height: 30px;
+}
+
+ol.rules-list li span {
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.parent {
+    width: 100%;
+    height: 500px;
+    background: #36393f;
+    overflow-y: hidden;
+    border-radius: 10px;
+} 
+.parent > iframe {
+    width: calc(100% - 1px);
+    height: 565px;
+    bottom: -65px;
+    border: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.discord-widget {
+    width: 80%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+.socials img {
+    height: 50px;
+}
+
+.socials {
+    margin-bottom: 10px;
+}
+
+.website-info {
+    align-self: center;
+    padding: 0 10%;
+}
+
+.copyright {
+    padding: 0 10%;
+}
+
+.copyright:after {
+    content: "Website & Content © Copyright 2021 Study World. All Rights Reserved.";
+}
+
+
+@media screen and (max-width: 800px) {
+    header div.side {
+        display: none;
+    }
+    header div.center {
+        width: 100%;
+    }
+    header div.center p.title {
+        font-size: 60px;
+    }
+    div.flex-container {
+        display: inline-block;
+    }
+    div.flex-container div {
+        width: auto;
+    }
+    .side-container {
+        display: none;
+    }
+    div.flex-container h1 {
+        font-size: 30px;
+    }
+    div.flex-container div.counter-icon {
+        width: 20px;
+        height: 20px;
+    }
+    a.button {
+        position:relative;
+        padding: 15px;
+        margin: 5px 0;
+        background-color: #2a2a2a;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .parent iframe {
+        height: 585px;
+        bottom: -85px;
+    }
+}
