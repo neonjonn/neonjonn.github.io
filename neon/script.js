@@ -1,3 +1,4 @@
+/*
 var request = new XMLHttpRequest();
 
 request.open('GET', 'https://discord.com/api/guilds/772241655809966101/widget.json', true);
@@ -14,3 +15,4 @@ request.onerror = function() {
 };
 
 request.send();
+*/

@@ -216,6 +216,7 @@ div.divider {
     margin-top: 0px;
     font-size: 50px;
     padding: 5px;
+    line-height: 1em;
 }
 
 .flex-container p {
@@ -395,7 +396,7 @@ ol.rules-list li span {
 }
 
 .copyright:after {
-    content: "Website & Content © Copyright 2021 Study World. All Rights Reserved.";
+    content: "Website & Content © Copyright 2021 NeonJonn. All Rights Reserved.";
 }
 
 
