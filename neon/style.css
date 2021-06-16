@@ -111,25 +111,17 @@ nav ul li:hover:after {
     justify-content: center;
 }
 
-div.divider {
-    align-self: center;
-    width: 75%;
-    background-color: #aaaaaa;
-    height: 1px;
-}
-
 .flex-container div {
     margin: 20px;
     width: 50%;
 }
-
 
 .flex-container .side-container {
     width: 30%
 }
 
 .flex-container h1 {
-    color: #ff1a64;
+    color: var(--p1);
     width: max-content;
     margin-top: 0px;
     font-size: 50px;
@@ -143,65 +135,22 @@ div.divider {
     font-size: 20px;
 }
 
-div.counter-container {
-    width: 100%;
-    margin: 0;
-    padding: 0 20px 20px 0;
-}
-
-div.counter-container > div {
-    float: left;
-    margin: 0.2em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-}
-
-#discord-counter {
-    margin-left: 10px;
-    width: auto;
-}
-
-.counter-text {
-    width: auto;
-}
-
-div.counter-container:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-div.counter-icon {
-    background-color: #00bb00;
-    border-radius: 10px;;
-    width: 20px;
-    height: 20px;
-    box-shadow: 0px 0px 20px #00bb00;
-}
-
 .side-container img {
     width: 100%;
     height: auto;
     max-width: 350px;
 }
 
-.side-container iframe.youtube {
-    width: 100%;
-    height: 300px;
-    border-radius: 10px;
-}
-
-
 a.button {
     text-decoration: none;
-    color: #ff1a64;
+    color: var(--p1);
     position: absolute;
     margin: 0;
     width: max-content;
     padding: 15px;
     margin: 7px 20px;
-    background-color: #282828;
-    border: 2px solid #ff1a64;
+    background-color: var(--bg-color);
+    border: 2px solid var(--p1);
     border-radius: 5px;
     transition: 0.3s;
 }
@@ -224,56 +173,22 @@ a.button:hover > img {
     height: 25px;
 }
 
-font.markdown {
-    color: #282828;
-    border-radius: 5px;
-    background-color: #ff1a64;
-    padding: 1px 5px;
-    font-family: monospace;
-    font-size: 20px;
-    display:inline-block;
-}
-
-font.math {
-    font-family: monospace;
-    font-size: 20px;
-    font-weight: bold;
-}
-
 font.code {
     font-family: monospace;
     font-size: 18px;
+    font-weight: normal;
 }
 
-p.convo {
-    line-height: 30px;
-}
-
-ol.rules-list {
+ol.fancy-list {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
     font-size: 18px;
-    color: #ff1a64;
+    color: var(--p1);
     line-height: 30px;
 }
 
-ol.rules-list li span {
+ol.fancy-list li span {
     font-weight: normal;
     color: #ffffff;
-}
-
-.parent {
-    width: 100%;
-    height: 500px;
-    background: #36393f;
-    overflow-y: hidden;
-    border-radius: 10px;
-} 
-.parent > iframe {
-    width: calc(100% - 1px);
-    height: 565px;
-    bottom: -65px;
-    border: none;
 }
 
 .footer {
@@ -284,24 +199,6 @@ ol.rules-list li span {
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-}
-
-.discord-widget {
-    width: 80%;
-    height: 500px;
-    border-radius: 10px;
-}
-
-.socials a {
-    text-decoration: none;
-}
-
-.socials img {
-    height: 50px;
-}
-
-.socials {
-    margin-bottom: 10px;
 }
 
 .website-info {
@@ -343,12 +240,5 @@ ol.rules-list li span {
         padding: 15px;
         margin: 5px 0;
         background-color: #2a2a2a;
-    }
-}
-
-@media screen and (max-width: 430px) {
-    .parent iframe {
-        height: 585px;
-        bottom: -85px;
     }
 }
