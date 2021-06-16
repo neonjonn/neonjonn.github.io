@@ -38,13 +38,13 @@ header {
 }
 
 header div.title {
-    color: #9ffbff;
+    color: var(--p1);
     font-size: 200px;
     line-height: 1em;
 }
 
 header div.sub-title {
-    color: #90c5ff;
+    color: var(--s1);
     margin-top: 30px;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
@@ -61,12 +61,12 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin-right: 60px;
-    /* position: relative; */
+    margin-right: 80px;
+    position: relative;
     text-decoration: none;
     padding-bottom: 5px;
     color: #ffffff;
-    font-size: 40px;
+    font-size: 25px;
     margin-bottom: 5px;
 }
 
@@ -85,9 +85,8 @@ nav ul li:after {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 98%;
-    border: 5px solid black;
-    border-radius: 10px;
+    width: 100%;
+    border: 1px solid #ffffff;
     transform: scaleX(0);
     background-color: #ffffff;
     transition: transform 0.3s;
