@@ -125,7 +125,7 @@ nav ul li:hover:after {
     width: max-content;
     margin-top: 0px;
     font-size: 50px;
-    padding: 5px;
+    padding: 5px 0;
     line-height: 1em;
 }
 
@@ -156,7 +156,7 @@ a.button {
 }
 
 a.button img {
-    height: 20px;
+    height: 30px;
     vertical-align: middle;
     margin-right: 10px;
     transition: 0.3s;
@@ -170,7 +170,7 @@ a.button:hover {
 }
 
 a.button:hover > img {
-    height: 25px;
+    height: 35px;
 }
 
 font.code {
