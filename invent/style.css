@@ -163,8 +163,10 @@ nav ul li:hover:after {
     width: 100%;
     height: auto;
     max-width: 350px;
+}
+
+.side-container * {
     border-radius: 10px;
-    margin-top: 100px;
 }
 
 a.button {
@@ -205,14 +207,14 @@ font.code {
     font-weight: normal;
 }
 
-ol.fancy-list {
+.fancy-list {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     color: var(--p1);
     line-height: 30px;
 }
 
-ol.fancy-list li span {
+.fancy-list li span {
     font-weight: normal;
     color: #ffffff;
 }
