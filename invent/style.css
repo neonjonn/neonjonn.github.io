@@ -97,7 +97,7 @@ nav ul li:hover:after {
     transform: scaleX(1);
 }
 
-#toTopButton {
+#topButton {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -113,7 +113,7 @@ nav ul li:hover:after {
     border-radius: 4px;
 }
 
-#toTopButton:hover {
+#topButton:hover {
     background-color: #555;
 }
 
