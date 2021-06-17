@@ -110,6 +110,7 @@ nav ul li:hover:after {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .flex-container div {
