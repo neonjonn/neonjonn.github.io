@@ -169,6 +169,10 @@ nav ul li:hover:after {
     border-radius: 10px;
 }
 
+.side-container iframe {
+    width: 100%;
+}
+
 a.button {
     text-decoration: none;
     color: var(--p1);
