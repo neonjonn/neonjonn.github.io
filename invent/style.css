@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-    color-scheme: light dark;
     --bottom: #000000;
     --middle: #2f2f2f;
     --top: #cecece;
@@ -12,15 +11,8 @@
     --s2: #c994ff;
     --ac: #fbffb2;
 
-    --bg-color: var(--top);
+    --bg-color: var(--middle);
 }
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg-color: var(--middle);
-    }
-}
-
 html {
     max-width: 100%;
     scroll-behavior: smooth;
@@ -108,7 +100,7 @@ nav ul li:hover:after {
     border: none;
     outline: none;
     background-color: var(--p1);
-    color: var(--middle);
+    color: var(--bg-color);
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
@@ -243,26 +235,43 @@ font.code {
     header div.title {
         font-size: 60px;
     }
+    nav ul li {
+        margin: 5px 0;
+    }
+    nav ul li a {
+        text-decoration: underline;
+    }
     div.flex-container {
-        display: inline-block;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
     }
     div.flex-container div {
         width: auto;
     }
-    .side-container {
-        display: none;
+    .flex-container .side-container {
+        width: 100%;
     }
     div.flex-container h1 {
         font-size: 30px;
     }
-    div.flex-container div.counter-icon {
-        width: 20px;
-        height: 20px;
-    }
     a.button {
-        position:relative;
+        display: block;
+        position: relative;
         padding: 15px;
         margin: 5px 0;
-        background-color: #2a2a2a;
+        width: 100%;
+    } 
+    a.button:hover {
+        padding: 15px;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    a.button:hover > img {
+        height: 40px;
+    }
+    div.footer {
+        margin-bottom: 80px;
     }
 }
