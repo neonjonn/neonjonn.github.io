@@ -74,20 +74,22 @@
 
             <div class="flex-container" id="howitworks">
                 <div class="side-container">
-                    <img src="./images/picture.png">
+                    <img src="./images/code_screenshot_1.png">
                 </div>
                 <div class="main-container">
                     <h1>How it Works</h1>
                     <p>
                         We came up with the idea of a device that could translate ISL into English.
-                    </p>
-                        <ul class="fancy-list">
+                        Our code is implemented in 99% home-grown cage-free typescript, with a small dash of C++.
+                        <ol class="fancy-list">
                             <li><span>For our prototype we have attached a micro:bit to the
                                       thumb, it should be able to differentiate between the signs B and L.</span></li>
-                        </ul>
-                    <p>
-                        In the future we hope to improve
-                        on this device and make it translate different sign languages, not just ISL.
+                            <li><span>Using machine learning on the edge, we detect different positions via a dataset.</span></li>
+                            <li><span>We make use of ~100 lines of typescript to make a lexer and parser for custom configuration file format inspired by YAML</span></li>
+                            <li><span>We have an automated configuration provisioning tool, <code>configtool</code>.</span></li>
+                            <li><span>Our team added a custom C++ binding to the <a href="https://lancaster-university.github.io/microbit-docs/ubit/storage/">C++ storage API</a>.</span></li>
+                            <li><span>In the future we hope to improve on this device and make it translate different sign languages, not just ISL.</span></li>
+                        </ol>
                     </p>
                 </div>
             </div>
