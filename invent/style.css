@@ -233,7 +233,7 @@ font.code {
 
 @media screen and (max-width: 800px) {
     header div.title {
-        font-size: 60px;
+        font-size: 100px;
     }
     nav ul li {
         margin: 5px 0;
