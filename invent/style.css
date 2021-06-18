@@ -173,6 +173,14 @@ nav ul li:hover:after {
     width: 100%;
 }
 
+.flex-container a {
+    color: white;
+}
+
+.flex-container a:hover {
+    color: var(--p1);
+}
+
 a.button {
     text-decoration: none;
     color: var(--p1);
